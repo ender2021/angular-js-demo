@@ -1,0 +1,52 @@
+<h2>Wave Detail for {{arena.title}}, Wave {{wave.id}}</h2>
+
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<span class="wave-data-label">Blue Ribbon Objective</span>
+			</td>
+			<td>
+				<span class="wave-data">{{wave.description}}</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="wave-data-label">Enemies</span>
+			</td>
+			<td>
+				<span class="wave-data">{{wave.enemies}}</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="wave-data-label">Suggested Strategy</span>
+			</td>
+			<td>
+				<span class="wave-data">{{wave.textStrategy}}</span>
+			</td>
+		</tr>
+		<tr ng-show="wave.videoStrategy">
+			<td>
+				<span class="wave-data-label">Video Walkthrough</span>
+			</td>
+			<td>
+				<span class="wave-data">
+					<a href="{{wave.videoStrategy}}" target="_blank">{{wave.videoStrategy}}</a>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="wave-data-label">Challenge Completed</span>
+			</td>
+			<td>
+				<span class="wave-data">
+					<input type="checkbox" name="completed" ng-change="updateStatus()" ng-model="wave.complete" />
+				</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<a href="#/{{arena.id}}/">&lt;&lt; Back to {{arena.title}}</a>
