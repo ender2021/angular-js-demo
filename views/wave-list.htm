@@ -1,0 +1,6 @@
+<h4 class="panel-title">{{arena.title}} Blue Ribbon Challenges ({{arena.completedCount()}} completed)</h4>
+<ol>
+	<li ng-repeat="wave in arena.waves">
+		<a href="#/{{arena.id}}/{{wave.id}}">{{wave.description}}</a>
+	</li>
+</ol>

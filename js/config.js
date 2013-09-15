@@ -9,8 +9,8 @@ citc.factory('$dataService', ['$http', function($http) {
 	
 citc.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.
-			when('/', {templateUrl: 'views/arena-list.htm', controller: ArenaListCtrl}).
-			when('/:arenaId', {templateUrl: 'views/arena-detail.htm', controller: ArenaDetailCtrl}).
-			when('/:arenaId/:waveId', {templateUrl: 'views/wave-detail.htm', controller: WaveDetailCtrl}).
+			when('/', {templateUrl: 'views/panels-master.htm', controller: ArenaListCtrl}).
+			when('/:arenaId', {templateUrl: 'views/panels-master.htm', controller: ArenaDetailCtrl}).
+			when('/:arenaId/:waveId', {templateUrl: 'views/panels-master.htm', controller: WaveDetailCtrl}).
 			otherwise({redirectTo: '/'});
 	}]);

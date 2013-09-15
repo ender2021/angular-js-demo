@@ -1,0 +1,29 @@
+#app-container { width: 100% }
+
+#app-container #panel-title,
+#app-container .list-container,
+#app-container .detail-container
+{
+	display: block;
+	float: left;
+}
+
+#app-container .list-container,
+#app-container .detail-container
+{
+	width: 50%;
+	height: 100%;
+}
+
+#app-container #panel-title
+{
+	width: 100%;
+}
+
+.list-container .list-title
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.content-padding { padding: 5px; }
