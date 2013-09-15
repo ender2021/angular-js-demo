@@ -6,35 +6,35 @@
 				"description": "Defeat the wave using Sky-line strikes only",
 				"enemies": "Soldiers",
 				"textStrategy": "Pretty self explanatory this one, only use Skyline strikes to take out each enemy.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Defeat the wave taking only shield damage",
 				"enemies": "Soldiers",
 				"textStrategy": "Again, self explanatory, you are not allowed to take enough damage to destroy your shield. I found the best way to do this was using the Sky-line to make a getaway after every kill.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Defeat the wave using only the Sky hook attacks and Shotgun",
 				"enemies": "Soldiers",
 				"textStrategy": "You can use both versions of the Shotgun (Founder and Vox) and any attack that uses your sky hook, again I would advise using Sky-Line strikes.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Defeat the wave using only Machine guns or the Crank gun",
 				"enemies": "Soldiers, Volley Gunners",
 				"textStrategy": "This one is fairly simple, just be careful when attacking the enemy with the Volley gun, if you accidently hit one of his projectiles and it does damage to the enemy this will fail the challenge.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Defeat the wave using only the Pistol and Hand Cannon",
 				"enemies": "Handyman",
 				"textStrategy": "This challenge is against a single Handyman. I had fully upgraded the Hand Cannon when I completed this one and it only took 4 heart shots to take him down.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			}
 		]
@@ -46,35 +46,35 @@
 				"description": "Defeat all enemies with the shotgun",
 				"enemies": "Soldiers, RPG Soldiers",
 				"textStrategy": "This took me a few attempts because I was accidently shooting the rockets or the RPG soldiers were killing the normal soldiers. I would reccomend taking out the RPG guys first",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Defeat two enemies with a possessed patriot",
 				"enemies": "Soldiers, Patriots, Firemen, Zealots",
 				"textStrategy": "Try to shoot two enemies (preferably soldiers) down to low health and then possess a Patriot. Meanwhile get rid of the remaining enemies, unless you didn’t kill them before.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
 				"completed": false
 			},
 			{
 				"description": "Force 3 Firemen to self-destruct while airborne from Bucking Bronco or Undertow",
 				"enemies": "Firemen",
 				"textStrategy": "I did this from the roof I spawned on, they bounced up there 1 by 1, I used bucking bronco to get the airbourne then just shoot them until they explode.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start": "360", "end":"590"},
 				"completed": false
 			},
 			{
 				"description": "Damage 5 enemies with Vigor traps",
 				"enemies": "Soldiers, Volley Gunners",
 				"textStrategy": "Just set up a Vigor trap and lure 5 enemies into it. Keep in mind that Bucking Bronco, Charge and Undertow cannot be used to set up traps!",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start":"590"},
 				"completed": false
 			},
 			{
 				"description": "Complete the wave in under 0:45",
 				"enemies": "Soldiers, Snipers",
 				"textStrategy": "There are 4 snipers and a few Soldiers with batons. You shouldn’t have too much trouble completing this challenge. Take out the snipers from the Tower you start at and the Soldiers will come to you using the skyline.",
-				"videoStrategy": "",
+				"videoStrategy": {"videoId": "uSnRwXVxYX4"},
 				"completed": false
 			}
 		]

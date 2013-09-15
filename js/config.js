@@ -7,6 +7,17 @@ citc.factory('$dataService', ['$http', function($http) {
 		return $dataService;
 	}]);
 	
+citc.directive('youtube', function() {
+	return {
+		restrict: 'E',
+		transclude: false,
+		scope: { videoId: '@videoId', start: '@start', end: '@end' },
+		templateUrl: 'views/youtube-component.htm',
+		controller: YouTubeCompCtrl,
+		replace: true
+	};
+});
+	
 citc.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.
 			when('/', {templateUrl: 'views/panels-master.htm', controller: ArenaListCtrl}).

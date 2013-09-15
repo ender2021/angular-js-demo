@@ -1,6 +1,6 @@
 <h2>Wave {{wave.id}}</h2>
 
-<table>
+<table class="wave-detail-display">
 	<tbody>
 		<tr>
 			<td>
@@ -26,13 +26,16 @@
 				<span class="wave-data">{{wave.textStrategy}}</span>
 			</td>
 		</tr>
-		<tr ng-show="wave.videoStrategy">
+		<tr ng-show="wave.videoStrategy.videoId != ''">
 			<td>
 				<span class="wave-data-label">Video Walkthrough</span>
 			</td>
 			<td>
 				<span class="wave-data">
-					<a href="{{wave.videoStrategy}}" target="_blank">{{wave.videoStrategy}}</a>
+					<youtube width="640" height="385"
+							 video-id="{{wave.videoStrategy.videoId}}"
+							 start="{{wave.videoStrategy.start}}"
+							 end="{{wave.videoStrategy.end}}" />
 				</span>
 			</td>
 		</tr>
@@ -42,7 +45,7 @@
 			</td>
 			<td>
 				<span class="wave-data">
-					<input type="checkbox" name="completed" ng-change="updateStatus()" ng-model="wave.complete" />
+					<input type="checkbox" name="completed" ng-change="updateWaveStatus(arena, wave)" ng-model="wave.complete" />
 				</span>
 			</td>
 		</tr>

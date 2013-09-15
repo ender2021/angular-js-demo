@@ -26,12 +26,17 @@ function JsonFileDataProvider (filePath, $http) {
 		return toReturn;
 	}
 	function _mapWave(index, arenaId, dataElement) {
-		return new Wave(index + 1,
+		var wave = new Wave(index + 1,
 						dataElement.description,
 						dataElement.enemies,
 						dataElement.textStrategy,
-						dataElement.videoStrategy,
+						_mapYouTubeStrategy(dataElement.videoStrategy),
 						_getChallengeStatusSynchronous(arenaId, index + 1));
+		return wave;
+	}
+	
+	function _mapYouTubeStrategy(dataElement) {
+		return new YouTubeStrategy(dataElement.videoId, dataElement.start ? dataElement.start : null, dataElement.end ? dataElement.end : null);
 	}
 	
 	function _localStorageKey(arenaId, waveId) {
@@ -93,4 +98,11 @@ function Wave (id, description, enemies, textStrategy, videoStrategy, complete) 
 	this.textStrategy = textStrategy;
 	this.videoStrategy = videoStrategy;
 	this.complete = complete;
+}
+
+function YouTubeStrategy(videoId, start, end)
+{
+	this.videoId = videoId;
+	this.start = start;
+	this.end = end;
 }

@@ -27,3 +27,14 @@
 }
 
 .content-padding { padding: 5px; }
+
+table.wave-detail-display td
+{
+	vertical-align: top;
+}
+
+table.wave-detail-display .wave-data-label
+{
+	font-weight: bold;
+	white-space: nowrap;
+}
