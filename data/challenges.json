@@ -6,36 +6,91 @@
 				"description": "Defeat the wave using Sky-line strikes only",
 				"enemies": "Soldiers",
 				"textStrategy": "Pretty self explanatory this one, only use Skyline strikes to take out each enemy.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Defeat the wave taking only shield damage",
 				"enemies": "Soldiers",
 				"textStrategy": "Again, self explanatory, you are not allowed to take enough damage to destroy your shield. I found the best way to do this was using the Sky-line to make a getaway after every kill.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Defeat the wave using only the Sky hook attacks and Shotgun",
 				"enemies": "Soldiers",
 				"textStrategy": "You can use both versions of the Shotgun (Founder and Vox) and any attack that uses your sky hook, again I would advise using Sky-Line strikes.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Defeat the wave using only Machine guns or the Crank gun",
 				"enemies": "Soldiers, Volley Gunners",
-				"textStrategy": "This one is fairly simple, just be careful when attacking the enemy with the Volley gun, if you accidently hit one of his projectiles and it does damage to the enemy this will fail the challenge.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"textStrategy": "This one is fairly simple, just be careful when attacking the enemy with the Volley gun, if you accidentally hit one of his projectiles and it does damage to the enemy this will fail the challenge.",
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Defeat the wave using only the Pistol and Hand Cannon",
 				"enemies": "Handyman",
 				"textStrategy": "This challenge is against a single Handyman. I had fully upgraded the Hand Cannon when I completed this one and it only took 4 heart shots to take him down.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave without picking up weapons or looting corpses",
+				"enemies": "Soldiers, RPG Heavies",
+				"textStrategy": "This one is really easy, just start the wave with 2 weapons that has plenty of ammo, or use the Sniper rifle from the Sky-Line and take them out with headshots.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies using only Zoomable weapons while they are Zoomed",
+				"enemies": "Soldiers, Snipers, Zealots (Crows)",
+				"textStrategy": "As above, you can use the Sniper Rifle or the Vox Burstgun for this challenge, on the Sky-Lines the sole Zealot won't attack so can be easily picked off with headshots.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies using only tears, Possession traps and Return to Sender traps",
+				"enemies": "Zealots (Crows), Volley Gunners",
+				"textStrategy": "For this one I simply used the Rocket Automatron and the Tesla Coil near where you spawn.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies without ever hitting anyone in the head or hear",
+				"enemies": "Soldiers, Handyman",
+				"textStrategy": "I used the Sniper Rifle for this challenge along with a Rocket Launcher for the Handyman, Snipe all the Soldiers taking care you don't get a headshot then attack the Handyman by opening the Decoy car and shooting him from behind with Rockets.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the Siren before she performs a resurrection",
+				"enemies": "Soldiers, Siren",
+				"textStrategy": "Load out with a fully upgraded Hailfire.  Leap onto the platform below the one you spawn on, there should be a circle of corpses.  The Siren will show up here, spam her with grenades until she dies.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave without using Sky-Lines or Hook-Points",
+				"enemies": "?",
+				"textStrategy": "Just start this wave with your most upgraded weapons and Vigors and keep moving.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave within 1:15",
+				"enemies": "Zealots (Crows), Firemen",
+				"textStrategy": "Choose your most powerful loadout to take out the 2 heavy troops and 2 Ravens.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave using only weapons fired from a Sky-Line or Sky-Line strikes",
+				"enemies": "",
+				"textStrategy": "",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave using only Shock Jockey and Headshots",
+				"enemies": "",
+				"textStrategy": "I chose the Sniper Rifle again for this challenge and picked off my headshots.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat each enemy with a different vigor type",
+				"enemies": "2 Handymen, 1 Patriot",
+				"textStrategy": "",
+				"videoStrategy": {"videoId": ""}
 			}
 		]
 	},
@@ -45,37 +100,282 @@
 			{
 				"description": "Defeat all enemies with the shotgun",
 				"enemies": "Soldiers, RPG Soldiers",
-				"textStrategy": "This took me a few attempts because I was accidently shooting the rockets or the RPG soldiers were killing the normal soldiers. I would reccomend taking out the RPG guys first",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"textStrategy": "This took me a few attempts because I was accidentally shooting the rockets or the RPG soldiers were killing the normal soldiers. I would recommend taking out the RPG guys first",
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Defeat two enemies with a possessed patriot",
 				"enemies": "Soldiers, Patriots, Firemen, Zealots",
 				"textStrategy": "Try to shoot two enemies (preferably soldiers) down to low health and then possess a Patriot. Meanwhile get rid of the remaining enemies, unless you didn’t kill them before.",
-				"videoStrategy": {"videoId": "", "start":"0", "end":"0"},
-				"completed": false
+				"videoStrategy": {"videoId": ""}
 			},
 			{
 				"description": "Force 3 Firemen to self-destruct while airborne from Bucking Bronco or Undertow",
 				"enemies": "Firemen",
-				"textStrategy": "I did this from the roof I spawned on, they bounced up there 1 by 1, I used bucking bronco to get the airbourne then just shoot them until they explode.",
-				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start": "360", "end":"590"},
-				"completed": false
+				"textStrategy": "I did this from the roof I spawned on, they bounced up there 1 by 1, I used bucking bronco to get the airborne then just shoot them until they explode.",
+				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start": "360", "end":"590"}
 			},
 			{
 				"description": "Damage 5 enemies with Vigor traps",
 				"enemies": "Soldiers, Volley Gunners",
 				"textStrategy": "Just set up a Vigor trap and lure 5 enemies into it. Keep in mind that Bucking Bronco, Charge and Undertow cannot be used to set up traps!",
-				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start":"590"},
-				"completed": false
+				"videoStrategy": {"videoId": "lRuJ4rL1o2c", "start":"590"}
 			},
 			{
 				"description": "Complete the wave in under 0:45",
 				"enemies": "Soldiers, Snipers",
 				"textStrategy": "There are 4 snipers and a few Soldiers with batons. You shouldn’t have too much trouble completing this challenge. Take out the snipers from the Tower you start at and the Soldiers will come to you using the skyline.",
-				"videoStrategy": {"videoId": "uSnRwXVxYX4"},
-				"completed": false
+				"videoStrategy": {"videoId": "uSnRwXVxYX4"}
+			},
+			{
+				"description": "Defeat the handyman while he’s electrocuting a skyline",
+				"enemies": "Handyman",
+				"textStrategy": "The Handyman is in the tower where you started wave 5. Take the skyline to the tower and shoot down his health to almost 0. Then get back on the skyline until he is electrocuting it. Then take him out.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat five enemies with Undertow",
+				"enemies": "Soldiers, RPG Soldiers, Patriots",
+				"textStrategy": "The enemies are coming in with airships. Simply blow them off the edge with Undertow.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat 2 enemies with a Possessed rocket turret ",
+				"enemies": "Soldiers, Volley Gunners",
+				"textStrategy": "Wait until the enemies leave their airship (or force them to by getting their attention and following you) and then possess the rocket turret that’s mounted under the airship. Lowering the enemies health prior to possessing the turret might help.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat every enemy with a different weapon or Vigor",
+				"enemies": "Soldiers, Zealots, Patriots",
+				"textStrategy": "Self explanatory",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Complete the wave using only Charge, Return to Sender; and Shotguns",
+				"enemies": "Soldiers, Volley Gunners",
+				"textStrategy": "Just equip your Charge and Return to Sender Vigors, as well as the Shotgun and Heater and you should be fine.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the Patriot with a possessed enemy",
+				"enemies": "Soldiers, Patriots",
+				"textStrategy": "Shoot all Soldiers but one, lower the Patriots health and then possess that last soldiers to kill the Patriot.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies with Vigor traps",
+				"enemies": "Soldiers, Snipers",
+				"textStrategy": "Just set up some Vigor traps and lure the enemies into them. Remember, you can also 'shoot' the trap directly at an enemy, which does more damage than if you set them up on the ground.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat 5 enemies with a single Devil’s Kiss blast",
+				"enemies": "Soldiers, Volley Gunners",
+				"textStrategy": "Equip Charge and the Storm headgear before beginning the wave.  As soon as it begins, start charging the vigor.  Aim at the guy on the top right of the bandstand roof and use it to get up there.  Quickly switch to Devil's Kiss, charge it, and unleash at the nearest enemy.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the handyman with a Tesla Coil",
+				"enemies": "Soldiers, Handyman",
+				"textStrategy": "Bring in the Tesla Coil through a tear. Then Lower the Handyman’s health, have the handyman around the Tesla Coil and let it do the rest (High shield and health stats highly recommended).",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Complete the wave in under 1:30",
+				"enemies": "Soldiers, RPG Soldiers",
+				"textStrategy": "Select your best weapon/Vigor loadout and set to killing the enemies as fast as possible Important to know is that you have to kill 4 more enemies inside the blimp and destroy the engine to end the wave.",
+				"videoStrategy": {"videoId": ""}
+			}
+		]
+	},
+	{
+		"title": "Raven's Dome",
+		"waves": [
+			{
+				"description": "Defeat all enemies with the sky-hook melee",
+				"enemies": "Soldiers",
+				"textStrategy": "Equipping Gear which grants Melee damage will help a lot (e.g. Burning Halo); and it doesn’t fail the challenge if the enemy dies from the elemental damage done by the Gear!",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies with the pistol",
+				"enemies": "Soldiers",
+				"textStrategy": "Upgrade your Pistol prior to starting the wave (if not done yet) might help here.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies using only the Undertow Vigor",
+				"enemies": "Soldiers, Volley Gunners",
+				"textStrategy": "Equip your Undertow Vigor and wait for the soldiers to be near an edge where you can 'knock' them off easily.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies with vigor traps",
+				"enemies": "Soldiers, RPG Soldiers, Zealots",
+				"textStrategy": "Take care not to line up 2 enemies in front or behind you. If they accidentally shoot each other, you will fail this challenge. SO I would suggest not to use a Possession trap!",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the Handyman before any other enemy",
+				"enemies": "Soldiers, Handyman",
+				"textStrategy": "Be sure not to use Undertow on the Handyman when other enemies are nearby. The chance to set them flying off is too high.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat 5 enemies via friendly fire",
+				"enemies": "Soldiers, Patriots",
+				"textStrategy": "Lower the health of the soldiers and then use your Possession Vigor on the Patriot to let him kill 5 of the Soldiers.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the Volley Gunner and the Zealot before damaging any snipers",
+				"enemies": "Soldiers, Snipers, Volley Gunners, Zealot",
+				"textStrategy": "Just make sure you kill everyone but the snipers first.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies with turrets or environmental hazards",
+				"enemies": "Soldiers, RPG-Soldiers",
+				"textStrategy": "Use only Rocket or Gun Automations or set Oil spills on Fire or shock Water Puddles. Tesla Coil is also fine.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies in 60 seconds using vigors only",
+				"enemies": "Soldiers, RPG-Soldiers, Firemen",
+				"textStrategy": "Make sure your salts are always full and then keep throwing the enemies off of Columbia with Undertow.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Take no damage for 30 seconds",
+				"enemies": "Soldiers, RPG-Soldiers, Firemen",
+				"textStrategy": "Open the decoy tear from where you spawn then duck into nearby cover.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies with the Shotgun",
+				"enemies": "Soldiers, RPG-Soldiers, Volley Gunners, Firemen",
+				"textStrategy": "Self-explanatory",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave without picking up weapons or looting corpses",
+				"enemies": "Soldiers, Firemen",
+				"textStrategy": "You can get rid of the Firemen easily by throwing them off of Columbia with Undertow.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies while they are distracted with a Booker decoy tear",
+				"enemies": "Snipers, Patriots",
+				"textStrategy": "Just set up a decoy and wait for the enemies to get to it, use your Undertow Vigor and throw them off of Columbia (this only works for the 2 soldiers) For the Patriots shoot them down to low health, set up the decoy and then destroy them.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat each enemy with the same weapon-type it wields",
+				"enemies": "Soldiers, RPG-Soldiers",
+				"textStrategy": "The easiest way to do this might be to set up a decoy and check which weapon each enemy is carrying. Then take them out one after another. Remember to use tears to get the specific weapon needed to kill the enemies.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat each enemy with a different weapon",
+				"enemies": "Fireman, Handyman",
+				"textStrategy": "You can kill the Fireman with Undertow by knocking him off of Columbia. The 2 Handymen have then to be killed with different weapons.",
+				"videoStrategy": {"videoId": ""}
+			}
+		]
+	},
+	{
+		"title": "Emporia Arcade",
+		"waves": [
+			{
+				"description": "Defeat an enemy affected by Bucking Bronco with a possessed Motorized Patriot",
+				"enemies": "Soldiers, Patriots",
+				"textStrategy": "First kill one of the Patriots from where you start and lower the health of the soldiers. Then use the skyline to go to the lower bridge which the decoy is on. You will need quite a few tries keeping the Patriot possessed and the soldiers flying.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat 2 enemies who are riding sky-lines with traps",
+				"enemies": "Soldiers, RPG-Soldiers",
+				"textStrategy": "Right from where you start the wave, there are 2 soldiers coming in for you riding the sky-line (one from each side). If you are lucky, you can hit them directly with a trap and kill them. This one requires a lot of luck.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat wave with hazards or support brought in through tears",
+				"enemies": "Soldiers, Volley Gunners",
+				"textStrategy": "Right from the start, bring in the Tesla Coil through a tear and start luring the enemies towards it. Shooting the enemies and thus lowering their health will not fail the challenge and help quite a lot by means of saving time.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave using a different weapon or vigor on every enemy",
+				"enemies": "Soldiers, RPG-Soldiers",
+				"textStrategy": "Just Use different weapons or Vigors on each of them. You can also try to knock one of the enemies off the bridge with Undertow. However, be careful just to knock off one! You can also use the upgraded Possession Vigor, which will cause the possessed enemy to suicide, once possession is wearing off. Using different Vigors on the same enemy doesn’t fail the challenge. As long as you are taking care with which you killed the enemy and not using that again on another one.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat both Handymen while they are electrocuting a sky-line",
+				"enemies": "Handyman",
+				"textStrategy": "For this one, remember to use Undertow to stun them for a short time, to get their health down by shooting their hearts. Just before their health reaches ‘0’, ride a sky-line to get them to electrocute it. Take out one at a time.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies using only the Shotgun",
+				"enemies": "Soldiers, Snipers",
+				"textStrategy": "You might want to bring in a Freight Hook through a tear to get to the building where all the Snipers and Soldiers are located. Then just pick your shot one after another, 2 of the Snipers shots will kill you!",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat two enemies with the Firemans suicide attack",
+				"enemies": "Soldiers, Firemen",
+				"textStrategy": "",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the wave within 1:20",
+				"enemies": "Soldiers, RPG-Soldiers, Patriots",
+				"textStrategy": "Right from where you start, jump to the freight hook on the floating boat to your left and use Undertow on the Patriot to stun him and take him out quickly. After that, bring in the freight hook through a tear on the building ahead of you and toss the Soldiers off the edge with Undertow. Then run towards the second Patriot and again use Undertow to stun him and a powerful weapon to take him out.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the Siren before destroying the zeppelin",
+				"enemies": "Soldiers, RPG-Soldiers, Patriots, Siren",
+				"textStrategy": "Only thing you should take care of is not to die, or to have an extra life. First, the Zeppelin will appear out of the fog. After that, two flying ships will bring in some Soldiers and RPG-Soldiers. After killing them, make your way up to the zeppelin by using the freight hooks on the airships. Get rid of the Patriot and the last few soldiers coming out of the zeppelin. Now kill the Siren before destroying the engine of the zeppelin.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies using only the sniper rifle",
+				"enemies": "Soldiers",
+				"textStrategy": "There are only around 3 to 4 enemies which will actually shoot at you. The other will come at you with melee.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all enemies while they are distracted with a Booker decoy tear",
+				"enemies": "Handyman",
+				"textStrategy": "Enemies only have to be distracted by the decoy when giving them the final blow. You can lower their health without having a decoy set up. When their health is low, set up one of the decoys and kill them. Taking out one by one is recommended.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat all Soldiers and Zealots with Bucking Bronco; followed by Charge",
+				"enemies": "Soldiers, Zealots, Patriots",
+				"textStrategy": "Take out the 2 Patriots first from afar with a Carbine. During this the 2 Zealots will likely come up to you. Just send them flying with Bucking Bronco, followed by Charge to knock them off easily. After that, go down to the building, where the rest of the soldiers are. Then repeat the same procedure as for the Zealots and you should be fine.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat each enemy with the same weapon-type it wields",
+				"enemies": "Soldiers",
+				"textStrategy": "(Glitch: If you have an extra life from the previous wave(s), get yourself killed. When in the detectives office, wait for a moment, because some enemies will jump off the airships, fall and die. This will NOT fail your Challenge! You can then get out using the door and get rid of the remaining enemies, taking care only to use the weapons they are wielding. Maxed out shield and health recommended // I am not claiming credit on this one. Found this out today by myself, but have read about it in this thread as well)",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Defeat the handyman with a Motorized Patriot tear",
+				"enemies": "Handyman",
+				"textStrategy": "Lower the health of the handyman as much as you can, then bring in the Patriot through the tear on one of the airships. Setting up the decoy will help you to lower the health of the handyman.",
+				"videoStrategy": {"videoId": ""}
+			},
+			{
+				"description": "Knock 4 corpses off of Columbia before the Siren can resurrect them",
+				"enemies": "Siren",
+				"textStrategy": "I got this one without actually doing anything",
+				"videoStrategy": {"videoId": ""}
 			}
 		]
 	}
