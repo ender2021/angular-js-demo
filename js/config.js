@@ -1,11 +1,11 @@
 var citc = angular.module('citc', []);
 
-citc.factory('$dataService', ['$http', function($http) {
+citc.factory('$dataService', function($http, $q) {
 		var $dataService = new ICitcDataProviderServiceContract(
-			new JsonFileDataProvider('data/challenges.json', $http)
+			new JsonFileDataProvider('data/challenges.json', $http, $q)
 		);
 		return $dataService;
-	}]);
+	});
 	
 citc.directive('youtube', function() {
 	return {

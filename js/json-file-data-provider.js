@@ -1,21 +1,21 @@
-function JsonFileDataProvider (filePath, $http) {
+function JsonFileDataProvider (filePath, $http, $q) {
     var self = this;
 
-    //define private properties
-    var dataStructure;
-
     //define private methods
-    function _getDataStructure(callback) {
-        if (dataStructure) {
-            callback(dataStructure);
-        } else {
-            $http.get(filePath, {cache: false}).
-                success(function(data, status) {
-                    dataStructure = data;
-                    callback(dataStructure);
-                });
-        }
+    function _getDataStructure() {
+        var deferred = $q.defer();
+        
+        $http.get(filePath).
+            success(function(data, status) {
+                deferred.resolve(data);
+            }).
+            error(function(data, status) {
+                deferred.reject(status);
+            });
+
+        return deferred.promise;
     }
+    
     function _mapArena(index, dataElement, deep) {
         var toReturn = new Arena(index + 1,
                                  dataElement.title,
@@ -61,35 +61,49 @@ function JsonFileDataProvider (filePath, $http) {
     }
 
     //define public methods
-    this.getArenaList = function(deepCopy, callback) {
-        _getDataStructure(function(data) {
+    this.getArenaList = function(deepCopy) {
+        var promise = _getDataStructure();
+        
+        return promise.then(function(data) {
             var arenas = [];
-            for(var i = 0; i < data.length; i++) {
+            for (var i = 0; i < data.length; i++) {
                 arenas.push(_mapArena(i, data[i], deepCopy));
-                callback(arenas);
             }
+            return arenas;
         });
     };
-    this.getArena = function(arenaId, callback) {
-        _getDataStructure(function(data) {
-            callback(_mapArena(arenaId - 1, data[arenaId - 1], true));
+    this.getArena = function (arenaId) {
+        var promise = _getDataStructure();
+        
+        return promise.then(function(data) {
+            return _mapArena(arenaId - 1, data[arenaId - 1], true);
         });
     };
-    this.getWave = function(arenaId, waveId, callback) {
-        _getDataStructure(function(data) {
-            callback(_mapWave(waveId - 1, arenaId, data[arenaId - 1][waveId - 1]));
+    this.getWave = function (arenaId, waveId) {
+        var promise = _getDataStructure();
+        
+        return promise.then(function(data) {
+            return _mapWave(waveId - 1, arenaId, data[arenaId - 1][waveId - 1]);
         });
     };
-    this.getChallengeStatus = function(arenaId, waveId, callback) {
-        callback(_getChallengeStatusSynchronous(arenaId, waveId));
-    }
+    this.getChallengeStatus = function(arenaId, waveId) {
+        var deferred = $q.defer();
+
+        deferred.resolve(_getChallengeStatusSynchronous(arenaId, waveId));
+
+        return deferred.promise;
+    };
     this.setChallengeStatus = function(arenaId, waveId, status) {
         localStorage[_localStorageKey(arenaId, waveId)] = status.toString();
-    }
-    this.getHighScore = function(arenaId, callback) {
-        callback(_getHighScoreSynchronous(arenaId));
-    }
+    };
+    this.getHighScore = function (arenaId) {
+        var deferred = $q.defer();
+
+        deferred.resolve(_getHighScoreSynchronous(arenaId));
+
+        return deferred.promise;
+    };
     this.setHighScore = function(arenaId, score) {
         localStorage[_localStorageKey(arenaId)] = score.toString();
-    }
+    };
 }

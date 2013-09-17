@@ -1,21 +1,21 @@
 function ICitcDataProviderServiceContract(dataProvider) {
-	this.getArenaList = function(deepCopy, callback) {
-		return dataProvider.getArenaList(deepCopy, callback);
+	this.getArenaList = function(deepCopy) {
+		return dataProvider.getArenaList(deepCopy);
 	};
-	this.getArena = function(arenaId, callback) {
-		return dataProvider.getArena(arenaId, callback);
+	this.getArena = function(arenaId) {
+		return dataProvider.getArena(arenaId);
 	};
-	this.getWave = function(arenaId, waveId, callback) {
+	this.getWave = function(arenaId, waveId) {
 		return dataProvider.getWave(arenaId, waveId);
 	};
-	this.getChallengeStatus = function(arenaId, waveId, callback) {
-		return dataProvider.getChallengeStatus(arenaId, waveId, callback);
+	this.getChallengeStatus = function(arenaId, waveId) {
+		return dataProvider.getChallengeStatus(arenaId, waveId);
 	};
 	this.setChallengeStatus = function(arenaId, waveId, status) {
 		return dataProvider.setChallengeStatus(arenaId, waveId, status);
 	};
-    this.getHighScore = function(arenaId, callback) {
-        return dataProvider.getHighScore(arenaId, callback);
+    this.getHighScore = function(arenaId) {
+        return dataProvider.getHighScore(arenaId);
     };
     this.setHighScore = function(arenaId, score) {
         return dataProvider.setHighScore(arenaId, score);

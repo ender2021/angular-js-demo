@@ -8,9 +8,7 @@ function ArenaListCtrl($scope, $dataService)
 	$scope.detailView = 'views/all-detail.htm';
 	
 	//load view model content
-	$dataService.getArenaList(true, function(arenas) {
-		$scope.arenas = arenas;
-	});
+	$scope.arenas = $dataService.getArenaList(true);
 }
 	
 function ArenaDetailCtrl($scope, $routeParams, $dataService)
@@ -24,15 +22,15 @@ function ArenaDetailCtrl($scope, $routeParams, $dataService)
 	$scope.detailView = 'views/arena-detail.htm';
 
 	//load view model content
-	$dataService.getArena($routeParams.arenaId, function(arena) {
-		$scope.arena = arena;
+	$dataService.getArena($routeParams.arenaId).then(function(arena) {
+	    $scope.arena = arena;
 	});
 	
 	//define methods
 	$scope.updateWaveStatus = self.StatusUpdater.update;
     $scope.saveHighscore = function() {
         $dataService.setHighScore($scope.arena.id, $scope.arena.highScore);
-    }
+    };
 }
 
 function WaveDetailCtrl($scope, $routeParams, $dataService)
@@ -46,11 +44,11 @@ function WaveDetailCtrl($scope, $routeParams, $dataService)
 	$scope.detailView = 'views/wave-detail.htm';
 
 	//load view model content
-	$dataService.getArena($routeParams.arenaId, function(arena) {
-		$scope.arena = arena;
-		$scope.wave = arena.waves[$routeParams.waveId-1];
-	});
-	
+	$scope.arena = $dataService.getArena($routeParams.arenaId);
+    $scope.arena.then(function(arena) {
+        $scope.wave = arena.waves[$routeParams.waveId - 1];
+    });
+    
 	//define methods
 	$scope.updateWaveStatus = self.StatusUpdater.update;
 }
