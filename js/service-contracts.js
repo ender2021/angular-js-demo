@@ -1,6 +1,6 @@
 function ICitcDataProviderServiceContract(dataProvider) {
-	this.getArenaList = function(callback) {
-		return dataProvider.getArenaList(callback);
+	this.getArenaList = function(deepCopy, callback) {
+		return dataProvider.getArenaList(deepCopy, callback);
 	};
 	this.getArena = function(arenaId, callback) {
 		return dataProvider.getArena(arenaId, callback);
@@ -13,5 +13,11 @@ function ICitcDataProviderServiceContract(dataProvider) {
 	};
 	this.setChallengeStatus = function(arenaId, waveId, status) {
 		return dataProvider.setChallengeStatus(arenaId, waveId, status);
-	}
+	};
+    this.getHighScore = function(arenaId, callback) {
+        return dataProvider.getHighScore(arenaId, callback);
+    };
+    this.setHighScore = function(arenaId, score) {
+        return dataProvider.setHighScore(arenaId, score);
+    };
 }

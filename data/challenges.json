@@ -1,6 +1,8 @@
 [
 	{
 		"title": "OPS Zeal",
+        "description": "A fairly straight-forward map.  The office door is pointed out to you the first time you play this arena, but in case you forget:  the center part of the map is a ship of sorts; off its starboard side (if you're on the crow's nest and looking towards the front of the ship, that's to your right) there's a building that has two balcony levels.  On the lower balcony level is where you'll find your resurrection office.",
+        "imagePath": "images/ops-zeal.jpg",
 		"waves": [
 			{
 				"description": "Defeat the wave using Sky-line strikes only",
@@ -96,6 +98,8 @@
 	},
 	{
 		"title": "Duke & Dimwit Theater",
+        "description": "Description of map will go here",
+        "imagePath": "images/duke-dimwit-theatre.jpg",
 		"waves": [
 			{
 				"description": "Defeat all enemies with the shotgun",
@@ -191,6 +195,8 @@
 	},
 	{
 		"title": "Raven's Dome",
+        "description": "Description of map will go here",
+        "imagePath": "images/ravens-dome.jpg",
 		"waves": [
 			{
 				"description": "Defeat all enemies with the sky-hook melee",
@@ -286,6 +292,8 @@
 	},
 	{
 		"title": "Emporia Arcade",
+        "description": "Description of map will go here",
+        "imagePath": "images/emporia-arcade.jpg",
 		"waves": [
 			{
 				"description": "Defeat an enemy affected by Bucking Bronco with a possessed Motorized Patriot",

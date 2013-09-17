@@ -1,1 +1,17 @@
 <h4 id="panel-title">Clash in the Clouds Overall Details</h4>
+
+<ul class="arena-summary-list">
+    <li class="arena-summary" ng-repeat="arena in arenas">
+        <span class="arena-summary-title">{{arena.title}}</span>
+        <ul class="arena-summary-item-list">
+            <li class="arena-summary-item">
+                <span class="arena-summary-item-label">High Score:</span>
+                <span class="arena-summary-item-data">{{arena.highScore}}</span>
+            </li>
+            <li class="arena-summary-item">
+                <span class="arena-summary-item-label">Blue Ribbon Challenges Complete:</span>
+                <span class="arena-summary-item-data">{{arena.completedCount()}}</span>
+            </li>
+        </ul>
+    </li>
+</ul>

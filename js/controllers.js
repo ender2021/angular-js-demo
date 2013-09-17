@@ -8,7 +8,7 @@ function ArenaListCtrl($scope, $dataService)
 	$scope.detailView = 'views/all-detail.htm';
 	
 	//load view model content
-	$dataService.getArenaList(function(arenas) {
+	$dataService.getArenaList(true, function(arenas) {
 		$scope.arenas = arenas;
 	});
 }
@@ -30,6 +30,9 @@ function ArenaDetailCtrl($scope, $routeParams, $dataService)
 	
 	//define methods
 	$scope.updateWaveStatus = self.StatusUpdater.update;
+    $scope.saveHighscore = function() {
+        $dataService.setHighScore($scope.arena.id, $scope.arena.highScore);
+    }
 }
 
 function WaveDetailCtrl($scope, $routeParams, $dataService)

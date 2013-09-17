@@ -1,1 +1,15 @@
-<h4 id="panel-title">Arena Detail for {{arena.title}}</h4>
+<h4 id="panel-title">{{arena.title}}</h4>
+
+<img src="{{arena.imagePath}}" ng-show="arena.imagePath != ''" alt="{{arena.title}} still image" class="arena-image" />
+
+<div class="arena-ribbon-count">
+    You have completed {{arena.completedCount()}} of this arena's Blue Ribbon Challenges.
+</div>
+
+<div class="arena-high-score">
+    <label for="arena-highscore">High Score</label>
+    <input type="textbox" id="arena-highscore" name="arena-highscore" ng-model="arena.highScore" />
+    <button ng-click="saveHighscore()">Save</button>
+</div>
+
+<div class="arena-description">{{arena.description}}</div>

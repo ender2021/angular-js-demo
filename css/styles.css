@@ -8,11 +8,10 @@
 	float: left;
 }
 
-#app-container .list-container,
 #app-container .detail-container
 {
-	width: 50%;
-	height: 100%;
+    width: 600px;
+    height: 100%;
 }
 
 #app-container #panel-title
@@ -37,4 +36,25 @@ table.wave-detail-display .wave-data-label
 {
 	font-weight: bold;
 	white-space: nowrap;
+}
+
+.arena-ribbon-count, .arena-high-score, .arena-description
+{
+    margin-top: 10px;
+}
+
+.arena-high-score label
+{
+    display: block;
+    font-weight: bold;
+}
+
+.arena-summary-list
+{
+    list-style: none;
+}
+
+.arena-summary-list .arena-summary-title
+{
+    font-weight: bold;
 }
