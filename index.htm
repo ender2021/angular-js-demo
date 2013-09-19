@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html ng-app="citc">
-<head>
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<script src="js/lib/angular.min.js"></script>
-	<script src="js/service-contracts.js"></script>
-	<script src="js/models.js"></script>
-	<script src="js/controllers.js"></script>
-    <script src="js/json-file-data-provider.js"></script>
-	<script src="js/config.js"></script>
-</head>
-<body>
-	<h1>Clash in the Clouds Blue Ribbon Challenges</h1>
-	<div id="app-container" ng-view></div>
-</body
+    <head>
+        <title>Clash in the Clouds AnguarJS Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <h1>Clash in the Clouds Blue Ribbon Challenges</h1>
+        <div id="app-container" ng-view></div>
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/directives/youtube.js"></script>
+        <script src="js/directives/numeric-keys.js"></script>
+        <script src="js/services/citc-data.js"></script>
+        <script src="js/services/keycode-util.js"></script>
+        <script src="js/models/arena.js"></script>
+        <script src="js/models/wave.js"></script>
+        <script src="js/models/youtube-strategy.js"></script>
+        <script src="js/models/json-file-data-provider.js"></script>
+        <script src="js/controllers/arena-detail-controller.js"></script>
+        <script src="js/controllers/arena-list-controller.js"></script>
+        <script src="js/controllers/wave-detail-controller.js"></script>
+        <script src="js/controllers/youtube-component-controller.js"></script>
+    </body>
 </html>

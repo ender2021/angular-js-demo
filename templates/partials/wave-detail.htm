@@ -33,9 +33,9 @@
 			<td>
 				<span class="wave-data">
 					<youtube width="640" height="385"
-							 video-id="{{wave.videoStrategy.videoId}}"
-							 start="{{wave.videoStrategy.start}}"
-							 end="{{wave.videoStrategy.end}}" />
+							 video-id="wave.videoStrategy.videoId"
+							 start="wave.videoStrategy.start"
+							 end="wave.videoStrategy.end" />
 				</span>
 			</td>
 		</tr>
@@ -45,7 +45,7 @@
 			</td>
 			<td>
 				<span class="wave-data">
-					<input type="checkbox" name="completed" ng-change="updateWaveStatus(arena, wave)" ng-model="wave.complete" />
+					<input type="checkbox" name="completed" ng-change="setChallengeStatus(arena.id, wave.id, wave.complete)" ng-model="wave.complete" />
 				</span>
 			</td>
 		</tr>
